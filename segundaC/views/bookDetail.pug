@@ -1,0 +1,7 @@
+extends layout
+block content
+  h1 #{theBook.title}
+  span Written by: #{theBook.author}
+  p Summary: #{theBook.description}
+  p Rating: #{theBook.rating}
+  a(href="/book") resgresar

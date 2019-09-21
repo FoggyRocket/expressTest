@@ -1,0 +1,7 @@
+extends layout
+block content
+  h1 Esta es la ruta de los libros
+  ul
+    each book in books
+      a(href=`/books/${book._id}`)
+        li #{book.title}
